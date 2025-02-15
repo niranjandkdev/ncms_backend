@@ -13,7 +13,7 @@ dotenv.config();
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors({
-  origin: "https://mern-task-app-1-et90.onrender.com"
+  origin: "https://mern-task-app-1-et90.onrender.com,"http://localhost:5000""
 }));
 
 app.use("/api/admin", adminRoutes);
